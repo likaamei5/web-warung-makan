@@ -1,0 +1,260 @@
+/* Reset dan font dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #d94f30;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("images/banner.jpg"); /* ganti sesuai gambar */
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: rgb(12, 12, 12);
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Menu Section */
+.menu {
+  padding: 50px 0;
+}
+
+.menu h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  background-color: #fdfcfc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.menu-item h3 {
+  margin-top: 10px;
+}
+
+.menu-item p {
+  color: #d94f30;
+  font-weight: bold;
+}
+
+.menu-item button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #d94f30;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-item button:hover {
+  background-color: #c44126;
+}
+
+/* Cart Section */
+.cart {
+  background-color: #fef2e0;
+  padding: 50px 0;
+}
+
+.cart h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.cart-items li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart button:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+.checkout-form {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.checkout-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.checkout-form form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout-form label {
+  font-weight: bold;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  resize: vertical;
+}
+/* ========== RESPONSIF MOBILE ========== */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr; /* 1 kolom saja di mobile */
+  }
+
+  .checkout-form form {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .checkout-form input,
+  .checkout-form textarea {
+    font-size: 14px;
+  }
+
+  .checkout-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+.checkout-form select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

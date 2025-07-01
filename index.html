@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warung Makan Online</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1>Warung Makan Online</h1>
+        <nav>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#cart">Keranjang</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h2>Selamat datang di Warung Makan Online!</h2>
+        <p>Nikmati berbagai hidangan lezat, pesan dari rumah saja.</p>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+      <div class="container">
+        <h2>Menu Makanan</h2>
+        <div class="menu-items">
+          <!-- Contoh item -->
+          <div class="menu-item">
+            <img src="img/nasigoreng.jpg" alt="Nasi Goreng" />
+            <h3>Nasi Goreng</h3>
+            <p>Rp20.000</p>
+            <button>Tambah ke Keranjang</button>
+          </div>
+          <div class="menu-item">
+            <img src="img/mieayam.jpg" alt="Mie Ayam" />
+            <h3>Mie Ayam</h3>
+            <p>Rp25.000</p>
+            <button>Tambah ke Keranjang</button>
+          </div>
+          <div class="menu-item">
+            <img src="img/satekambing.jpg" alt="Sate Kambing" />
+            <h3>Sate Kambing</h3>
+            <p>Rp30.000</p>
+            <button>Tambah ke Keranjang</button>
+          <!-- Tambahkan item lain di sini -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart">
+      <!-- Checkout Form -->
+      <section class="checkout-form">
+        <div class="container">
+          <h2>Informasi Pengiriman</h2>
+          <form id="order-form">
+            <div>
+              <label for="name">Nama Lengkap:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="address">Alamat Lengkap:</label>
+              <textarea id="address" name="address" required></textarea>
+            </div>
+            <div>
+              <label for="phone">No. HP:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <button type="submit" class="checkout-btn">Kirim Pesanan</button>
+          </form>
+        </div>
+      </section>
+
+      <div class="container">
+        <h2>Keranjang Belanja</h2>
+        <ul class="cart-items">
+          <!-- Item keranjang akan ditampilkan di sini -->
+        </ul>
+        <p>Total: <span id="total">Rp0</span></p>
+        <button>Checkout</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container">
+        <p>&copy; 2025 Warung Makan Online. Kontak: warung@example.com</p>
+      </div>
+    </footer>
+    <div>
+      <label for="payment">Metode Pembayaran:</label>
+      <select id="payment" name="payment" required>
+        <option value="">-- Pilih Metode --</option>
+        <option value="Transfer Bank">Transfer Bank</option>
+        <option value="E-Wallet">E-Wallet (OVO, GoPay, DANA)</option>
+        <option value="COD">Bayar di Tempat (COD)</option>
+      </select>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
